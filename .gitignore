@@ -16,6 +16,6 @@
 #.DS_Store
 #Thumbs.db
 
-data/
-*.jpg
-*.png
+#data/
+#.jpg
+#.png

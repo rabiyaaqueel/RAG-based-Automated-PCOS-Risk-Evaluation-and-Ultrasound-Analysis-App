@@ -8,7 +8,7 @@ xgboost==2.1.0
 imbalanced-learn==0.12.3
 
 # Deep Learning
-tensorflow==2.16.1
+tensorflow
 
 # NLP / RAG
 sentence-transformers==2.7.0
