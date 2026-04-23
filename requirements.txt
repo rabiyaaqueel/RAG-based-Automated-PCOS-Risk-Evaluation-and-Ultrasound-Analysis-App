@@ -3,7 +3,7 @@ numpy==1.26.4
 pandas==2.2.2
 
 # Machine Learning
-scikit-learn==1.5.1
+scikit-learn==1.6.1
 xgboost==2.1.0
 imbalanced-learn==0.12.3
 
@@ -12,7 +12,7 @@ tensorflow
 
 # NLP / RAG
 sentence-transformers==2.7.0
-faiss-cpu==1.8.0
+faiss-cpu
 
 # Visualization (used in notebook)
 matplotlib==3.9.0
