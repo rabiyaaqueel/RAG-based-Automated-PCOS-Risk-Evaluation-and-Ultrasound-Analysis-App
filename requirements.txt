@@ -1,0 +1,30 @@
+# Core
+numpy==1.26.4
+pandas==2.2.2
+
+# Machine Learning
+scikit-learn==1.5.1
+xgboost==2.1.0
+imbalanced-learn==0.12.3
+
+# Deep Learning
+tensorflow==2.16.1
+
+# NLP / RAG
+sentence-transformers==2.7.0
+faiss-cpu==1.8.0
+
+# Visualization (used in notebook)
+matplotlib==3.9.0
+seaborn==0.13.2
+
+# App Framework
+streamlit==1.35.0
+
+# Utilities
+joblib==1.4.2
+pillow==10.3.0
+requests==2.32.3
+
+# Optional (if needed for notebooks / debugging)
+scipy==1.13.1
