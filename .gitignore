@@ -17,5 +17,5 @@
 #Thumbs.db
 
 data/
-#*.jpg
-#*.png
+*.jpg
+*.png
