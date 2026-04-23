@@ -1,4 +1,5 @@
 import streamlit as st
+from tensorflow.keras.models import load_model
 import numpy as np
 import pandas as pd
 import joblib
@@ -11,7 +12,6 @@ import faiss
 import requests
 from sentence_transformers import SentenceTransformer
 from datetime import datetime
-from tensorflow.keras.models import load_model
 
 #Configuration & Models
 NVIDIA_API_KEY = "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" 
@@ -224,17 +224,19 @@ elif page == "Ultrasound Prediction":
 
     # 2. Load Model from Local Path
     # To this:
-    model = load_model('best_model.keras')
+    # 1. Define the filename as a simple string
+    # Use a clear name for the path string
+    # 1. Use a clear, unique string for the filename
+    # 1. Load the model once
+    pcos_model_file = "best_model.keras"
 
-    @st.cache_resource
-    def load_cnn_model(path):
-        try:
-            return tf.keras.models.load_model(path)
-        except Exception as e:
-            st.error(f"Error loading model: {e}")
-            return None
-
-    u_model = load_cnn_model(model)
+    try:
+        # We load it directly here
+        u_model = tf.keras.models.load_model(pcos_model_file)
+        st.success("Ultrasound model loaded successfully!")
+    except Exception as e:
+        u_model = None
+        st.error(f"Could not load model file. Error: {e}")
 
     # 3. File Uploader
     uploaded_file = st.file_uploader("Choose an ultrasound image...", type=["jpg", "jpeg", "png"])
