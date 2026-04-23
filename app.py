@@ -243,7 +243,7 @@ elif page == "Ultrasound Prediction":
 
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
-        st.image(image, caption="Uploaded Scan", use_container_width=True)
+        st.image(image, caption="Uploaded Scan", use_column_width=True)
         
         if st.button("Analyze Scan"):
             if u_model is not None:

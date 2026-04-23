@@ -1,14 +1,16 @@
 # Core
-numpy==1.26.4
 pandas==2.2.2
-
+streamlit>=1.35.0
+tensorflow==2.16.1
+numpy==1.26.4
+scikit-learn==1.5.1
+joblib
+pillow
 # Machine Learning
-scikit-learn==1.6.1
 xgboost==2.1.0
 imbalanced-learn==0.12.3
 
-# Deep Learning
-tensorflow
+
 
 # NLP / RAG
 sentence-transformers==2.7.0
@@ -18,12 +20,8 @@ faiss-cpu
 matplotlib==3.9.0
 seaborn==0.13.2
 
-# App Framework
-streamlit==1.35.0
 
-# Utilities
-joblib==1.4.2
-pillow==10.3.0
+
 requests==2.32.3
 
 # Optional (if needed for notebooks / debugging)
