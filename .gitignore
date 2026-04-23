@@ -1,17 +1,17 @@
 # Data files
-*.csv
-*.xlsx
+#.csv
+#.xlsx
 
 # Models
-*.pkl
-*.keras
-*.h5
-*.npy
+#.pkl
+#.keras
+#.h5
+#.npy
 
 # Python
-__pycache__/
-*.pyc
+#__pycache__/
+#.pyc
 
 # System
-.DS_Store
-Thumbs.db
+#.DS_Store
+#Thumbs.db
