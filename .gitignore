@@ -1,0 +1,17 @@
+# Data files
+*.csv
+*.xlsx
+
+# Models
+*.pkl
+*.keras
+*.h5
+*.npy
+
+# Python
+__pycache__/
+*.pyc
+
+# System
+.DS_Store
+Thumbs.db
