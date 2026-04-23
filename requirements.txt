@@ -1,15 +1,14 @@
 # Core
 pandas==2.2.2
-streamlit>=1.35.0
+streamlit==1.56.0
 tensorflow==2.16.1
 numpy==1.26.4
-scikit-learn==1.5.1
+scikit-learn==1.6.1
 joblib
 pillow
 # Machine Learning
 xgboost==2.1.0
 imbalanced-learn==0.12.3
-
 
 
 # NLP / RAG

@@ -105,8 +105,8 @@ if "rag_initial_summary" not in st.session_state:
 page = st.sidebar.radio("Pages", ["RAB PCOS", "PCOS Prediction (Symptoms)", "Ultrasound Prediction","RAG PCOS Symptoms Analysis","RAG Chatbot- Your personal medical assistant"])
 
 # home page
-if page == "RAB PCOS":
-    st.title("RAB PCOS")
+if page == "RAG PCOS":
+    st.title("RAG PCOS")
     st.subheader("Automated PCOS Risk Evaluation and Ultrasound Analysis App")
     st.markdown("""
     ### Welcome 👋
@@ -243,7 +243,7 @@ elif page == "Ultrasound Prediction":
 
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
-        st.image(image, caption="Uploaded Scan", use_column_width=True)
+        st.image(image, caption="Uploaded Scan", use_container_width=True)
         
         if st.button("Analyze Scan"):
             if u_model is not None:
