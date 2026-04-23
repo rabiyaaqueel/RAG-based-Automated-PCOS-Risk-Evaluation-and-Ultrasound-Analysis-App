@@ -11,6 +11,7 @@ import faiss
 import requests
 from sentence_transformers import SentenceTransformer
 from datetime import datetime
+from tensorflow.keras.models import load_model
 
 #Configuration & Models
 NVIDIA_API_KEY = "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" 
@@ -222,7 +223,8 @@ elif page == "Ultrasound Prediction":
     CLASS_MAP = {0: "Infected", 1: "Not Infected"}
 
     # 2. Load Model from Local Path
-    MODEL_PATH = r"C:\Users\91850\Desktop\test_pcos - Copy\best_model.keras"
+    # To this:
+    model = load_model('best_model.keras')
 
     @st.cache_resource
     def load_cnn_model(path):
@@ -232,7 +234,7 @@ elif page == "Ultrasound Prediction":
             st.error(f"Error loading model: {e}")
             return None
 
-    u_model = load_cnn_model(MODEL_PATH)
+    u_model = load_cnn_model(model)
 
     # 3. File Uploader
     uploaded_file = st.file_uploader("Choose an ultrasound image...", type=["jpg", "jpeg", "png"])
