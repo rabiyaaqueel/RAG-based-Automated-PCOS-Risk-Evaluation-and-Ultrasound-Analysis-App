@@ -15,3 +15,7 @@
 # System
 #.DS_Store
 #Thumbs.db
+
+data/
+*.jpg
+*.png
