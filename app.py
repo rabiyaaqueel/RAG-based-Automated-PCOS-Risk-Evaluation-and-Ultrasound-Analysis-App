@@ -102,7 +102,7 @@ if "rag_initial_summary" not in st.session_state:
     st.session_state.rag_initial_summary = None
 
 #pages
-page = st.sidebar.radio("Pages", ["RAB PCOS", "PCOS Prediction (Symptoms)", "Ultrasound Prediction","RAG PCOS Symptoms Analysis","RAG Chatbot- Your personal medical assistant"])
+page = st.sidebar.radio("Pages", ["RAG PCOS", "PCOS Prediction (Symptoms)", "Ultrasound Prediction","RAG PCOS Symptoms Analysis","RAG Chatbot- Your personal medical assistant"])
 
 # home page
 if page == "RAG PCOS":
