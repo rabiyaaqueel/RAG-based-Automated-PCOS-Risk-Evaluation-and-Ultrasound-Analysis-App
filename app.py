@@ -112,7 +112,7 @@ if page == "RAG PCOS":
     ### Welcome 👋
     
     ### Overview
-    The RAB PCOS platform is an integrated medical intelligence solution designed to assist healthcare providers 
+    The RAG PCOS platform is an integrated medical intelligence solution designed to assist healthcare providers 
     and patients in the early detection and management of Polycystic Ovary Syndrome. By combining traditional 
     clinical data with state-of-the-art Computer Vision and Retrieval-Augmented Generation (RAG), 
     the app provides a 360-degree diagnostic view.
